@@ -6,11 +6,15 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration configuration;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IConfiguration configuration, ILogger<HomeController> logger2)
         {
-            _logger = logger;
+            int x = 1;
+            int tong = x + 1;
+            this.configuration = configuration;
+            _logger = logger2;
         }
 
         public IActionResult Index()
