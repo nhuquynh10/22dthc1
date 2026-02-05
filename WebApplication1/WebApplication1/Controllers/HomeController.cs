@@ -11,6 +11,8 @@ namespace WebApplication1.Controllers
 
         public HomeController(IConfiguration configuration, ILogger<HomeController> logger2)
         {
+            int x = 1;
+            int tong = x + 1;
             this.configuration = configuration;
             _logger = logger2;
         }
