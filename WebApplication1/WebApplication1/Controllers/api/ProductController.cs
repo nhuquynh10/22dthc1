@@ -10,5 +10,9 @@ namespace WebApplication1.Controllers.api
         public ProductController() { 
 
         }
+        [HttpPost("insert-product")]
+        public ActionResult Index() { 
+            return Ok();
+        }
     }
 }
