@@ -10,5 +10,9 @@ namespace WebApplication1.Controllers.api
         public ProductController() { 
 
         }
+        [HttpGet("get-all-product")]
+        public ActionResult Index() {
+            return Ok();
+        }
     }
 }
